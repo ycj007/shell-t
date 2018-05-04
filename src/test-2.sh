@@ -17,7 +17,7 @@ days=$(($timeDuring/60/60/24))
 echo $days
 
 else
-timeDuring=$(($(date +%s -d "$year$now") - $(date +%s -d "$year$sr")))
+timeDuring=$(($(date +%s -d "$(($year+1))$sr") - $(date +%s -d "$year$now")))
 days=$(($timeDuring/60/60/24))
 echo $days
 
